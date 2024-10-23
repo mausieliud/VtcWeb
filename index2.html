@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nvtc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Mobile-first styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styles */
+        nav {
+            background-color: #003366;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        /* Responsive container */
+        .container {
+            width: 100%;
+            padding: 1rem;
+        }
+.hero {
+    
+    background:url('Image/Bg1.jpg')  no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    min-height: 50vh;
+    position: relative;
+    transition: background-image 2s ease-in-out; /* Shorter transition time */
+}
+
+}
+.hero-content {
+    position: relative;
+    z-index: 1; /* Make sure the content stays on top of the background */
+    transition: opacity 1s ease-in-out; /* Fade effect for content */
+}
+
+
+
+        .hero h1 {
+            font-size: 2rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Main content section */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section {
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            color: #003366;
+        }
+
+        .section p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Media Queries */
+        @media(min-width: 768px) {
+            nav {
+                text-align: left;
+                padding: 1rem 2rem;
+            }
+
+            nav a {
+                font-size: 1.2rem;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.5rem;
+            }
+
+            /* Main content grid layout */
+            .main-content {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .section {
+                flex: 1 1 calc(50% - 2rem);
+                margin: 1rem;
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+
+</head>
+<body>
+ <header>
+        <div class="header-container">
+            <img src="Image/COA.png" alt="Logo 1" class="header-image">
+            <h1>Naisambu Vocational Training Center</h1>
+            <img src="Image/Logo.jpg" alt="Logo 2" class="header-image">
+        </div>
+    </header>
+
+    <!-- Navigation -->
+  <nav>
+       <a href="index.html">
+        <img src="Image/Logo.jpg" alt="University Logo" style="height: 50px; vertical-align: middle;">
+    </a>
+    <a href="#about">About Us</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#departments">Departments</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    <!-- Hero Section -->
+   <!-- Hero Section -->
+<div class="hero" id="hero">
+    <div class="hero-content">
+        
+        <h1 id="hero-title">Naisambu Vocational Training Center</h1>
+        <p id="hero-description">Skills For a Better Future</p>
+        <div id="hero-links">
+            <a href="#" style="color:purple; font-size:24px; text-align:left; display:block;">Staff Portal</a>
+            <a href="#" style="color:purple; font-size:24px; text-align:left; display:block;">Student's Portal</a>
+            <a href="#" style="color:purple; font-size:24px; text-align:left; display:block;">Online Application</a>
+            <a href="#" style="color:purple; font-size:24px; text-align:left; display:block;">Fee Payment</a>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Section 1: About the University -->
+            <div class="section" id="about">
+                <h2>About Us</h2>
+                <p>Naisambu Vocational Training Center is committed to equip technical sckills to students.......<br>
+                Learn more about our history, values, and what makes us unique.</p>
+               
+<p><strong>Location</strong><br>
+Trans-Nzoia County,Kiminini subcounty, Hospital ward.<br>
+We are situated along Kitale Cherangani Road opposite Legacy Schools,<br> behind Naisambu Primary School </p>
+            </div>
+
+            <!-- Section 2: Admissions -->
+            <div class="section" id="admissions">
+                <h2>Admissions</h2>
+                <p>We offer.........Start your journey with us by learning about our admission requirements and how to apply.</p>
+                <table style="background-color: #190019">
+  <tr style="background-color: blue">
+    <td>Course</td>
+    <td>Minimum Entry Requirement</td>
+    <td>Duration</td>
+    <td>Examination Body</td>
+  </tr>
+  <tr style="background-color: #FBE4D8">
+
+    <td>Building,Masonry,Carpentry<br>and Joinery</td>
+    <td>KCPE/KCSE</td>
+    <td>1 year</td>
+    <td>NITA</td>
+  </tr>
+  <tr style="background-color: #FBE4D8">
+    <td>Metal Processing<br>
+        Architectural Welding<br>Gas welding<br>sheet metal work<br> Welding</td>
+    <td>KCPE/KCSE</td>
+    <td>1 year</td>
+    <td>NITA</td>
+  </tr>
+   <tr style="background-color: #FBE4D8">
+    <td>Motor Vehicle(LMV,MVE)<br>Technology</td>
+    <td>KCPE/KCSE</td>
+    <td>1 year</td>
+    <td>NITA</td>
+  </tr>
+   <tr style="background-color: #FBE4D8">
+    <td>Fashion Design &<br>Garment Making Technology</td>
+    <td>KCPE/KCSE</td>
+    <td>1 year</td>
+    <td>NITA</td>
+  </tr>
+   <tr style="background-color: #FBE4D8">
+    <td>Hairdressing and<br>Beauty Therapy</td>
+    <td>KCPE/KCSE</td>
+    <td>1 year</td>
+    <td>NITA</td>
+  </tr>
+   <tr style="background-color: #FBE4D8">
+    <td>Electrical</td>
+    <td>KCPE/KCSE</td>
+    <td>1 year</td>
+    <td>NITA</td>
+  </tr>
+   <tr style="background-color: #FBE4D8">
+    <td>I.C.T-Packages</td>
+    <td>KCPE/KCSE</td>
+    <td>1 year</td>
+    <td>Internal</td>
+  </tr>
+</table>
+
+
+            </div>
+
+            <!-- Section 3: Departments -->
+            <div class="section" id="departments">
+                <h2>Departments</h2>
+                <p>Our diverse departments cover a wide range of disciplines, from Electrical installation, Hairdressing and beauty Therapy,Fashion design and garment making,Motor vehicle technology,Metal processing , Building and carpentry to IT.<br> Explore our academic offerings and find the right path for you.</p>
+               
+            </div>
+            <div class="section" id="fee">
+                <h2>Fees</h2>
+                <table style="background-color: #051f20">
+                    <tr style="background-color: #DAF1DE">
+                        <td>VOTEHEADS</td>
+                        <td>First Term</td>
+                        <td>Second Term</td>
+                        <td>Third Term</td>
+                        <td>Total</td>
+                    </tr>
+                   <tr style="background-color: #8EB69B">
+                        <td>Tuition Fees</td>
+                        <td>750</td>
+                        <td>750</td>
+                        <td>500</td>
+                        <td style="background-color: #BE4039;">2000</td>
+                    </tr>
+                    <tr style="background-color: #8EB69B">
+                        <td>RMI</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td>500</td>
+                        <td style="background-color: #BE4039;">1500</td>
+                    </tr>
+                     <tr style="background-color: #8EB69B">
+                        <td>LT & T</td>
+                        <td>300</td>
+                        <td>300</td>
+                        <td>300</td>
+                        <td style="background-color: #BE4039;">900</td>
+                    </tr>
+                     <tr style="background-color: #8EB69B">
+                        <td>EWC</td>
+                        <td>200</td>
+                        <td>200</td>
+                        <td>200</td>
+                        <td style="background-color: #BE4039;">600</td>
+                    </tr>
+                     <tr style="background-color: #8EB69B">
+                        <td>Medical</td>
+                        <td>300</td>
+                        <td>300</td>
+                        <td>200</td>
+                        <td style="background-color: #BE4039;">800</td>
+                    </tr>
+                     <tr style="background-color: #8EB69B">
+                        <td>Activities</td>
+                        <td>300</td>
+                        <td>300</td>
+                        <td>300</td>
+                        <td style="background-color: #BE4039;">900</td>
+                    </tr>
+                     <tr style="background-color: #8EB69B">
+                        <td>Personal Emoluments</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td style="background-color: #BE4039;">3000</td>
+                    </tr>
+                     <tr style="background-color: #8EB69B">
+                        <td>Adminstrative Costs</td>
+                        <td>400</td>
+                        <td>300</td>
+                        <td>200</td>
+                        <td style="background-color: #BE4039;">900</td>
+                    </tr>
+                     <tr style="background-color: #8EB69B">
+                        <td>Attachment Fee</td>
+                        <td>-</td>
+                        <td>3000</td>
+                        <td>-</td>
+                        <td style="background-color: #BE4039;">3000</td>
+                    </tr>
+                     <tr style="background-color: #8EB69B">
+                        <td>Educational Trips</td>
+                        <td>-</td>
+                        <td>400</td>
+                        <td>-</td>
+                        <td style="background-color: #BE4039;">400</td>
+                    </tr>
+                    <tr style="background-color: #8EB69B">
+                        <td style="background-color: #BE4039;">Total</td>
+                        <td style="background-color: #BE4039;">3750</td>
+                        <td style="background-color: #BE4039;">4450</td>
+                        <td style="background-color: #BE4039;">3200</td>
+                        <td style="background-color: #F39F5A;">13600</td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <!-- Section 4: Contact -->
+            <div class="section" id="contact">
+                <h2>Contact Us</h2>
+                <p>For inquiries,feel free to reach out to us.We are ready to assist you.</p>
+                
+               
+     <p> P.O. BOX 520 KITALE<br></p>
+<a href="mailto:naisambu.vtc@yahoo.com">
+  <i class="fa fa-envelope"></i>naisambu.vtc@yahoo.com
+</a>
+<br>
+ <a href="tel:+254704180161">
+  <i class="fa fa-phone"></i> Tel: +254704180161
+</a>
+<br>
+<a href="tel:+254769677841">
+  <i class="fa fa-phone"></i> Tel:+254769677841
+</a>
+<br>
+<br>
+<a href="www.naisambuvtc.ac.ke">
+  <i class="fas fa-globe"></i>www.naisambuvtc.ac.ke
+  </a>
+  <br>
+  <a href="https://maps.app.goo.gl/9tNYubKwq4y8W5F5A" target="_blank">
+  <i class="fa fa-map-marker-alt"></i>  Kitale Cherangani Road opposite Legacy Schools
+</a>
+
+
+
+            
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Naisambu Vocational Training Center. All rights reserved. | <a href="#" style="color: white;">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // Lazy load images
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll("img[data-src]");
+            const options = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.getAttribute("data-src");
+                        observer.unobserve(img);
+                    }
+                });
+            }, options);
+
+            images.forEach(image => observer.observe(image));
+        });
+    </script>
+</body>
+</html>
+
