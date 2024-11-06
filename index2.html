@@ -128,6 +128,40 @@
                 margin: 1rem;
             }
         }
+
+        /* Style for the <select> dropdown */
+        select {
+            width: 200px;  /* Width of the dropdown */
+            padding: 8px;  /* Space inside the dropdown */
+            font-size: 16px;  /* Font size for readability */
+            color: #333;  /* Text color */
+            background-color: #f0f0f0;  /* Background color */
+            border: 1px solid #ccc;  /* Border styling */
+            border-radius: 5px;  /* Rounded corners */
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);  /* Soft shadow */
+            appearance: none;  /* Removes default arrow for custom styling */
+            cursor: pointer;  /* Changes cursor to pointer */
+        }
+
+        /* Style for each option */
+        option {
+            padding: 8px;  /* Spacing around text */
+            color: #333;  /* Text color */
+            background-color: #ffffff;  /* Background color for options */
+        }
+
+        /* Style when hovering over options */
+        option:hover {
+            background-color: #ddd;  /* Highlight color on hover */
+        }
+
+        /* Optional: Style the dropdown arrow */
+        select::after {
+            content: "▼";  /* Custom arrow */
+            position: absolute;
+            right: 10px;
+            font-size: 12px;
+        }
     </style>
     <script src="script.js"></script>
 
@@ -150,6 +184,12 @@
     <a href="#admissions">Admissions</a>
     <a href="#departments">Departments</a>
     <a href="#contact">Contact</a>
+    <select name="importantlinks" onchange="navigateToLink(this)">
+        <option value="">Important links</option>
+        <option value="https://example.com/admission">Admission</option>
+        <option value="https://example.com/enrolment">Enrolment</option>
+        <option value="https://example.com/fee-structure">Fee Structure</option>
+    </select>
 </nav>
 
     <!-- Hero Section -->
@@ -506,6 +546,12 @@ We are situated along Kitale Cherangani Road opposite Legacy Schools,<br> behind
 
             images.forEach(image => observer.observe(image));
         });
+        function navigateToLink(selectElement) {
+            const url = selectElement.value;
+            if (url) {
+                window.location.href = url;  // Redirects to the selected URL
+            }
+        }
     </script>
 </body>
 </html>
